@@ -1,8 +1,9 @@
 <!--search.wxml-->
 <view class="container">
   <view class="section">
-    <view placeholder="请输入商家名称" class="search" bindtap="gotoSearch">
-      <text class="search-placeholder">请输入商家名称</text>
+    <view class="horiz-flex">
+      <input placeholder="请输入商家名称" class="search" focus />
+      <text class="cancel" bindtap="onCancel">取消</text>
     </view>
   </view>
 </view>

@@ -1,6 +1,6 @@
 /**app.wxss**/
 
-view {
+view,input {
   box-sizing: border-box;
 }
 
@@ -46,6 +46,15 @@ view {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+}
+
+.card {
+  border: 1px solid red;
+  border-radius: 12rpx;
+  min-width: 48%;
+  height: 400rpx;
+  margin-bottom: 24rpx;
+  background-color: white;
 }
 
 .marginTop {

@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <import src="kingkong.wxml"/>
+<import src="card.wxml"/>
 <view class="container">
   <view class="section">
     <view placeholder="请输入商家名称" class="search" bindtap="gotoSearch">
@@ -11,9 +12,29 @@
       </block>
     </view>
   </view>
-  <!-- <view class="section">
-    <view class="king-pos">
-      335
+  <view class="section" style="background: #f3f3f3;">
+    <view class="horiz-flex" style="flex-wrap: wrap">
+      <template is="card">
+
+      </template>
+      <template is="card">
+
+      </template>
+      <template is="card">
+
+      </template>
+      <template is="card">
+
+      </template>
+      <template is="card">
+
+      </template>
+      <template is="card">
+
+      </template>
+      <template is="card">
+
+      </template>
     </view>
-  </view> -->
+  </view>
 </view>

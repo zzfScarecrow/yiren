@@ -1,1 +1,7 @@
 /* pages/search/search.wxss */
+.cancel {
+  font-size: 24rpx;
+  min-width: 48rpx;
+  line-height: 60rpx;
+  margin-left: 24rpx;
+}
