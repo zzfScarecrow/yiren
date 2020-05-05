@@ -19,3 +19,14 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.kingkong {
+  display: flex;
+  width: 120rpx;
+  flex-direction: column;
+}
+.kingkong-text {
+  font-size: 24rpx;
+  text-align: center;
+  color: #666;
+}

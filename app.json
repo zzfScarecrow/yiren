@@ -1,12 +1,13 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/search/search",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fb773e",
-    "navigationBarTitleText": "一人本地生活",
+    "navigationBarTitleText": "一人本地生活服务",
     "navigationBarTextStyle":"white"
   },
   "style": "v2",

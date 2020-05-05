@@ -1,13 +1,19 @@
 <!--index.wxml-->
+<import src="kingkong.wxml"/>
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="section">
+    <view placeholder="请输入商家名称" class="search" bindtap="gotoSearch">
+      <text class="search-placeholder">请输入商家名称</text>
+    </view>
+    <view class="horiz-flex marginTop">
+      <block wx:for="{{kingkongPosData}}">
+        <template is="kingkong" data="{{...item}}"></template>
+      </block>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <!-- <view class="section">
+    <view class="king-pos">
+      335
+    </view>
+  </view> -->
 </view>

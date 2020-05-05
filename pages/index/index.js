@@ -4,15 +4,44 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    kingkongPosData: [{
+      img: '../../images/farm.png',
+      text: '农副产品',
+      themeColor: '#fb773e'
+    },
+    {
+      img: '../../images/transport.png',
+      text: '公共交通',
+      themeColor: 'rgb(0, 132, 255)'
+    },
+    {
+      img: '../../images/decoration.png',
+      text: '装修装饰',
+      themeColor: '#AC4848'
+    },
+    {
+      img: '../../images/life.png',
+      text: '本地生活',
+      themeColor: 'rgb(41, 204, 164)'
+    },
+    {
+      img: '../../images/coopration.png',
+      text: '商家入驻',
+      themeColor: '#EE2929'
+    }]
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  gotoSearch: function() {
+    wx.navigateTo({
+      url: '../search/search'
     })
   },
   onLoad: function () {
