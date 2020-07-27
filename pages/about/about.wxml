@@ -1,0 +1,19 @@
+<!--pages/about/about.wxml-->
+<view class="container" style="background: #ffffff">
+  <view class="section slogan">
+    让恭城没有难做的生意
+  </view>
+  <view class="section">
+    为恭城消费者提供最准确的便民服务信息，为恭城商家提供性价比最高的线上广告平台。打造一流的恭城本地生活频道，让恭城没有难做的生意！
+  </view>
+  <view class="section">
+    本平台可提供包括但不限于：农产品、房产、招聘、商品出售、二手交易等本地生活信息，欢迎大家前来合作！
+  </view>
+  <view class="section" bindtap="makeTheCall">
+    本小程序管理员（开发者）——小泽，联系电话：<text style="color: red;font-size: 24px;display:inline;">18210305816</text>微信电话同号
+  </view>
+  <view class="section">
+    欢迎大家加入粉丝群，可以先加我微信，由我拉各位进群，天天有福利哦~
+    需要<text style="color: red;font-size: 24px;" bindtap="makeTheCall">投放广告</text>天天做头版头条！也可以直接联系我~
+  </view>
+</view>

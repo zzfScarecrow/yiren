@@ -1,13 +1,16 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/search/search",
-    "pages/logs/logs"
+    "pages/contact/index",
+    "pages/about/about",
+    "pages/me/index",
+    "pages/detail/detail",
+    "pages/search/search"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fb773e",
-    "navigationBarTitleText": "一人本地生活服务",
+    "navigationBarTitleText": "恭城生活",
     "navigationBarTextStyle":"white"
   },
   "style": "v2",
@@ -25,7 +28,7 @@
       { "text": "我的", 
         "iconPath": "images/mine.png",
         "selectedIconPath": "images/mine_HL.png",
-        "pagePath": "pages/logs/logs"
+        "pagePath": "pages/me/index"
       }
     ]
   }

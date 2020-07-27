@@ -1,0 +1,10 @@
+<template name="summary">
+  <view class="summary horiz-flex" hover-class="summary-hover" hover-stay-time="400" data-id="11" bindtap="gotoDetail">
+    <image mode="aspectFill" src="../../images/hot.jpeg" class="summary-img" />
+    <view class="summary-content">
+      <view class="summary-content--title">我有土鸡蛋我有土鸡蛋我有土鸡蛋我有土鸡蛋我有土鸡蛋我有土鸡蛋</view>
+      <view class="summary-content--text">具体找我详聊具体找我详聊具体找我详聊具体找我详聊具体找我详聊具体找我详聊具体找我详聊具体找我详聊</view>
+    </view>
+    <image src="../../images/call.svg" data-phone="18710727898" class="summary-call" catchtap="makePhoneCall" />
+  </view>
+</template>

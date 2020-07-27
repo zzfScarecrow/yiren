@@ -1,0 +1,4 @@
+<!--components/narrow/narrow.wxml-->
+<view class="narrow" hover-class="narrow-hover" hover-stay-time="300">
+  <text class="narrow-title">{{title}}</text>
+</view>

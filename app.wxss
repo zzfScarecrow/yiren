@@ -26,6 +26,14 @@ view,input {
   flex-direction: column;
 }
 
+.slogan {
+  background-color: #fb773e;
+  color: #ffffff;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .search {
   height: 60rpx;
   width: 100%;
@@ -46,6 +54,7 @@ view,input {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card {
@@ -59,4 +68,8 @@ view,input {
 
 .marginTop {
   margin-top: 12px;
+}
+
+.view-hover {
+  background-color: #f3f3f3;
 }

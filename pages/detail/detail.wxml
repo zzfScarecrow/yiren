@@ -1,0 +1,14 @@
+<view class="detail">
+  <text class="detail-title">介绍</text>
+  <text class="detail-content">我这里有土鸡蛋我这里有土鸡蛋我这里有土鸡蛋我这里有土鸡蛋我这里有土鸡蛋</text>
+  <text class="detail-title">商家图片</text>
+  <view class="detail-images">
+    <block wx:for="{{imageList}}" wx:key="unique">
+      <image mode="aspectFill" src="{{item}}" lazy-load="true" class="detail-images--item" data-src="{{item}}" bindtap="preview"/>
+    </block>
+  </view>
+  <view class="detail-phone" hover-class="detail-phone-hover" hover-stay-time="300" bindtap="makeTheCall">
+    <text class="detail-phone--name">联系电话：{{phone}}</text>
+    <image src="../../images/call-green.svg" class="detail-phone--icon"></image>
+  </view>
+</view>

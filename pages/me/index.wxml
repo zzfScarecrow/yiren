@@ -1,0 +1,14 @@
+<!--pages/me/index.wxml-->
+<view class="me">
+  <view class="logoblock">
+    <view>
+      <image src="../../images/orange.svg" class="logoblock-icon"></image>
+      <text class="logoblock-version">v {{version}}</text>
+    </view>
+  </view>
+  <view style="padding: 0 8px">
+    <!-- <narrow title="联系我们" bindtap="gotoContact" /> -->
+    <narrow title="我发布的" bindtap="gotoAbout" />
+    <narrow title="关于" bindtap="gotoAbout" />
+  </view>
+</view>

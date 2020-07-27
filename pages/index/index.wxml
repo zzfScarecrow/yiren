@@ -1,18 +1,22 @@
 <!--index.wxml-->
 <import src="kingkong.wxml"/>
 <import src="card.wxml"/>
+<import src="summary.wxml"/>
 <view class="container">
   <view class="section">
-    <view placeholder="请输入商家名称" class="search" bindtap="gotoSearch">
-      <text class="search-placeholder">请输入商家名称</text>
+    <view placeholder="搜索" class="search" bindtap="gotoSearch">
+      <text class="search-placeholder">搜索</text>
     </view>
-    <view class="horiz-flex marginTop">
-      <block wx:for="{{kingkongPosData}}">
+    <!-- <view class="horiz-flex marginTop">
+      <block wx:for="{{kingkongPosData}}" wx:key="unique">
         <template is="kingkong" data="{{...item}}"></template>
       </block>
-    </view>
+    </view> -->
   </view>
-  <view class="section" style="background: #f3f3f3;">
+  <view class="section slogan" bindtap="gotoAbout" hover-class="slogan-hover" hover-stay-time="300">
+    让恭城没有难做的生意
+  </view>
+  <!-- <view class="section" style="background: #f3f3f3;">
     <view class="horiz-flex" style="flex-wrap: wrap">
       <template is="card">
 
@@ -36,5 +40,9 @@
 
       </template>
     </view>
+  </view> -->
+  <view class="section" style="background: #ffffff;">
+    <template is="summary"></template>
+    <template is="summary"></template>
   </view>
 </view>

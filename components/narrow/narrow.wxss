@@ -1,0 +1,30 @@
+/* components/narrow/narrow.wxss */
+.narrow {
+  padding: 8px;
+  border-bottom: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.narrow:last-child {
+  border: none;
+}
+.narrow:first-child {
+  border-bottom: 1px solid #cccccc;
+}
+.narrow::after {
+  content: '';
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-45deg);
+}
+.narrow-title {
+  font-size: 18px;
+}
+.narrow-hover {
+  background-color: #f3f3f3;
+}

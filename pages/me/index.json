@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "narrow": "/components/narrow/narrow"
+  }
+}

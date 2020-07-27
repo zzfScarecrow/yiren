@@ -1,0 +1,54 @@
+/* pages/detail/detail.wxss */
+.detail {
+  background-color: #ffffff;
+  padding: 8px;
+  padding-top: 100rpx;
+}
+.detail-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.detail-images--item {
+  height: 350rpx;
+  flex: 0 0 350rpx;
+  margin-bottom: 25rpx;
+  border-radius: 4px;
+}
+.detail-title {
+  font-size: 48rpx;
+  display: block;
+  margin-bottom: 8px;
+}
+.detail-content {
+  font-size: 32rpx;
+  line-height: 1;
+  color: #999999;
+}
+
+.detail-phone {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 5px 10px#cccccc;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  padding-bottom: 50rpx;
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 0 8px;
+}
+.detail-phone--name {
+  font-size: 32rpx;
+  color: #999999;
+}
+.detail-phone-hover {
+  background-color: #f3f3f3;
+}
+.detail-phone--icon {
+  height: 80rpx;
+  width: 80rpx;
+}

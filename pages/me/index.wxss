@@ -1,0 +1,17 @@
+/* pages/me/index.wxss */
+.logoblock {
+  height: 300rpx;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoblock-icon {
+  height: 100rpx;
+  width: 100px;
+}
+.logoblock-version {
+  display: block;
+  text-align: center;
+  font-size: 32rpx;
+}

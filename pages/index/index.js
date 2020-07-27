@@ -44,6 +44,27 @@ Page({
       url: '../search/search'
     })
   },
+  gotoAbout: function() {
+    wx.navigateTo({
+      url: '../about/about'
+    })
+  },
+  gotoDetail: function(e) {
+    const {
+      id
+    } = e.currentTarget.dataset
+    wx.navigateTo({
+      url: `../detail/detail?id=${id}`
+    })
+  },
+  makePhoneCall: function(e) {
+    const {
+      phone
+    } = e.target.dataset
+    wx.makePhoneCall({
+      phoneNumber: phone,
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
