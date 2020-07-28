@@ -7,6 +7,9 @@
     "pages/detail/detail",
     "pages/search/search"
   ],
+  "usingComponents": {
+    "goods-list": "/components/goods-list/index"
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fb773e",

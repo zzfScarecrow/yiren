@@ -1,2 +1,11 @@
 <!--components/goods-list/index.wxml-->
-<text>components/goods-list/index.wxml</text>
+  <block wx:for="{{dataSource}}" wx:key="unique">
+    <view class="summary horiz-flex" hover-class="summary-hover" hover-stay-time="400">
+      <image mode="aspectFill" src="{{item.picture}}" class="summary-img" />
+      <view class="summary-content">
+        <view class="summary-content--title">{{item.title}}</view>
+        <view class="summary-content--text">{{item.content}}</view>
+      </view>
+      <image src="../../images/call.svg" data-phone="{{item.phone}}" class="summary-call" catchtap="makePhoneCall" />
+    </view>
+  </block>

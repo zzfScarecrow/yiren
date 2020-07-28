@@ -42,7 +42,7 @@
     </view>
   </view> -->
   <view class="section" style="background: #ffffff;">
-    <template is="summary"></template>
-    <template is="summary"></template>
+    <!-- <template is="summary"></template> -->
+    <goods-list dataSource="{{goods}}" />
   </view>
 </view>

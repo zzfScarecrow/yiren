@@ -1,1 +1,51 @@
-/* components/goods-list/index.wxss */
+.summary {
+  border-bottom: 1px solid #f3f3f3;
+  padding: 40rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  width: 720rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary-hover {
+  background-color: #f3f3f3;
+}
+.summary-img {
+  height: 150rpx;
+  border-radius: 4px;
+  flex-basis: 150rpx;
+}
+.summary-content {
+  width: 450rpx;
+  height: 150rpx;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.summary-content--title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 32rpx;
+  white-space: nowrap;
+  font-weight: 500;
+  margin-bottom: 16rpx;
+}
+.summary-content--text {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+  white-space: normal;
+  color: #999999;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.summary-call {
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 3px;
+}

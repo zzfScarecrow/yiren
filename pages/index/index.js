@@ -31,13 +31,16 @@ Page({
       img: '../../images/coopration.png',
       text: '商家入驻',
       themeColor: '#EE2929'
+    }],
+    goods: [{
+      picture: "../../images/hot.jpeg",
+      title: "我有土鸡蛋我有土鸡蛋我有土鸡蛋我有土鸡蛋我有土鸡蛋我有土鸡蛋我有土鸡蛋",
+      content: "请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我请联系我",
+      phone: "000000",
+      status: 3,
+      rejectReason: "信息违规",
+      itemId: "111"
     }]
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
   },
   gotoSearch: function() {
     wx.navigateTo({
