@@ -1,7 +1,6 @@
 <!--index.wxml-->
 <import src="kingkong.wxml"/>
 <import src="card.wxml"/>
-<import src="summary.wxml"/>
 <view class="container">
   <view class="section">
     <view placeholder="搜索" class="search" bindtap="gotoSearch">
@@ -43,6 +42,6 @@
   </view> -->
   <view class="section" style="background: #ffffff;">
     <!-- <template is="summary"></template> -->
-    <goods-list dataSource="{{goods}}" />
+    <goods-list dataSource="{{goods}}" bind:select="gotoDetail" />
   </view>
 </view>

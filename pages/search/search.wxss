@@ -5,3 +5,38 @@
   line-height: 60rpx;
   margin-left: 24rpx;
 }
+.history {
+  margin-top: 4px;
+  font-size: 12px;
+  width: 100%;
+}
+.history-title {
+  text-align: left;
+  color: #999999;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history-title--delete {
+  height: 14px;
+  width: 14px;
+}
+.history-tags {
+  text-align: left;
+  color: #999999;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag {
+  padding: 2px 4px;
+  background-color: #cccccc;
+  color: #000000;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  flex: 0 0 auto;
+}
+.tag:last-child {
+  margin-right: 0;
+}

@@ -1,9 +1,25 @@
 <!--search.wxml-->
 <view class="container">
   <view class="section">
+    <!-- <view class="horiz-flex">
+      <input placeholder="搜索" class="search" focus="{{inputFocused}}" bindtap="onFocus" bindfocus="onFocus" bindblur="onBlur" value="{{search}}" bindinput="onInput" bindconfirm="onConfirm" />
+      <text class="cancel" bindtap="onCancel">取消</text>
+    </view> -->
     <view class="horiz-flex">
-      <input placeholder="搜索" class="search" focus />
+      <check-all-input style="width: 100%" placeholder="搜索" value="{{search}}" bind:focus="onFocus" bind:blur="onBlur" bind:input="onInput" bind:confirm="onConfirm" />
       <text class="cancel" bindtap="onCancel">取消</text>
     </view>
+    <view class="history" wx:if="{{inputFocused && tags.length}}">
+      <view class="history-title">
+        <text>历史搜索</text>
+        <image src="/images/delete.svg" class="history-title--delete" bindtap="deleteHistory"></image>
+      </view>
+      <view class="history-tags">
+        <view class="tag" wx:for="{{tags}}" bindtap="onTapTag" data-value="{{item}}" wx:key="unique">{{item}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="section" style="background: #ffffff;" wx:if="{{!inputFocused}}">
+    <goods-list dataSource="{{goods}}" bind:select="gotoDetail" />
   </view>
 </view>

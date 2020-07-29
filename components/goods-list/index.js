@@ -19,13 +19,13 @@ Component({
       }]
     },
     canCall: {
-      type: "bool",
+      type: Boolean,
       default: true,
     },
     showStatus: {
-      type: "bool",
+      type: Boolean,
       default: false
-    }
+    },
   },
 
   /**
@@ -39,6 +39,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    ontap: function(e) {
+      const {
+        record
+      } = e.currentTarget.dataset
+      this.triggerEvent('select', record)
+    }
   }
 })

@@ -40,6 +40,14 @@ Page({
       status: 3,
       rejectReason: "信息违规",
       itemId: "111"
+    },{
+      picture: "../../images/hot.jpeg",
+      title: "2222222",
+      content: "请联系",
+      phone: "000000",
+      status: 3,
+      rejectReason: "信息违规",
+      itemId: "111"
     }]
   },
   gotoSearch: function() {
@@ -54,10 +62,11 @@ Page({
   },
   gotoDetail: function(e) {
     const {
-      id
-    } = e.currentTarget.dataset
+      detail
+    } = e
+    const { itemId } = detail
     wx.navigateTo({
-      url: `../detail/detail?id=${id}`
+      url: `../detail/detail?id=${itemId}`
     })
   },
   makePhoneCall: function(e) {

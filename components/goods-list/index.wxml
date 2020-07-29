@@ -1,6 +1,6 @@
 <!--components/goods-list/index.wxml-->
   <block wx:for="{{dataSource}}" wx:key="unique">
-    <view class="summary horiz-flex" hover-class="summary-hover" hover-stay-time="400">
+    <view class="summary horiz-flex" hover-class="summary-hover" hover-stay-time="400" data-record="{{item}}" bindtap="ontap">
       <image mode="aspectFill" src="{{item.picture}}" class="summary-img" />
       <view class="summary-content">
         <view class="summary-content--title">{{item.title}}</view>
