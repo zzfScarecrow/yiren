@@ -1,5 +1,4 @@
 /* components/check-all-input/index.wxss */
-
 .search {
   height: 60rpx;
   width: 100%;
