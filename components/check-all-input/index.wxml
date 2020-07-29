@@ -1,0 +1,7 @@
+<view style="width: 100%">
+  <input placeholder="{{placeholder}}" class="search" focus bindtap="onFocus" bindblur="onBlur" value="{{value}}" bindinput="onInput" bindconfirm="onConfirm" wx:if="{{showInput}}" selection-start="0" selection-end="{{value.length}}" />
+  <view class="search" wx:if="{{!showInput}}" bindtap="onFocus">
+    <text class="search-text" wx:if="{{value}}">{{value}}</text>
+    <text class="search-placeholder" wx:else>{{placeholder}}</text>
+  </view>
+</view>
